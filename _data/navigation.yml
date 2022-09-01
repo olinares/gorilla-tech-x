@@ -1,8 +1,8 @@
 ---
 main_menu:
-- text: GT
-  url: "/index-11"
-  menu_type: ''
+- text: Get Help
+  url: "/index"
+  menu_type: dropdown
   submenu: ''
 - text: Home
   url: "/"
