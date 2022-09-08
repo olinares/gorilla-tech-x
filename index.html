@@ -28,40 +28,38 @@ features_tab:
       - Highly vetted
       - Friendly
       - Speak your language
-  - title: Pay per Incident or Monthly Subscription
+  - title: Simple Flat Rate Incident Fee
     icon: "/assets/images/icons/st-payment-method.png"
     content:
-      title: Secure Payments
+      title: Clear & Simple Pricing
       image: "/assets/images/art/ui2.png"
-      description: 'Donec id elit non mi porta gravida at eget metus. Integer posuere
-        erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh
-        ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel
-        eu leo. Cras mattis consectetur purus sit amet fermentum.
+      description: 'No need to worry about the clock. Our techs are highly vetted and trained and will resolve your issue in no time. Letting you get back to what matters to you! Your family, business and life.
 
         '
-      button_text: More Details
-      button_url: "#"
+      button_text: Book Now $99
+      button_url: "https://calendly.com/getgorilla/remote-support"
       lists:
-      - Donec elit non mi porta gravida.
-      - Fusce dapibus cursus commodo.
-  - title: Daily Updates
+      - Choose this option if you need remote help with any of your tech
+      - Fast & friendly techs
+      - One low flat rate price - $99 per incident
+      - We support Apple, Windows, Mobile, Home Tech, Software issues
+      - Remote support software will be used to connect with our techs
+  - title: On Demand Tech Support Monthly Subscription
     icon: "/assets/images/icons/ms-cloud-computing.png"
     content:
-      title: Daily Updates
+      title: Monthly Support Plans Available
       image: "/assets/images/art/ui3.png"
-      description: 'Donec id elit non mi porta gravida at eget metus. Integer posuere
-        erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh
-        ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel
-        eu leo. Cras mattis consectetur purus sit amet fermentum.
+      description: 'Calling all Work From Home, Remote, and Hybrid Professionals. The Freelancers, Business Owners Startups and Entrepreuneurs. The Influencers, The Creators and the Hustlers! We know you are constantly building, creating and moving the needle. Our subscription plans puts an on-demand IT & tech team at your service when you need it most. 
 
         '
-      button_text: More Details
-      button_url: "#"
+      button_text: Sign Up $199
+      button_url: "https://buy.stripe.com/7sIg0Bb0F1xhepa5kk"
       lists:
-      - Aenean eu leo quam ornare.
-      - Nullam quis risus eget mollis.
-      - Donec elit non mi porta gravida.
-      - Fusce dapibus cursus commodo.
+      - Choose this option if you need an on-demand, remote tech with unlimited online support - $199 Monthly
+      - Constantly needing tech support
+      - Get access to vetted professional IT techs that know business needs
+      - The best way to get an instant Tech team, no costly employee costs
+      - You can purchase one of our month to month or yearly plans to save even more - $600 yearly savings
   - title: System Integration
     icon: "/assets/images/icons/sm-setting.png"
     content:
@@ -254,7 +252,25 @@ testimonials:
                         </div>
                         <!-- /.tp-caption -->
                         {% endif %} {% if page.hero_area.video_url %}
-                        <a
+
+                          <a
+                            class="tp-caption btn-play-wrapper btn btn-l btn-default btn-strong-hover lightbox"
+                            data-x="['left','left','center','center']"
+                            data-y="middle"
+                            data-hoffset="['50','30','0','0']"
+                            data-voffset="['125','125','-130','0']"
+                            data-width="['auto','auto','auto','auto']"
+                            data-textAlign="['left','left','center','center']"
+                            data-frames='[{"delay":2500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-responsive="on"
+                            data-responsive_offset="on"
+                            style="z-index: 9;"
+                            href="{{page.hero_area.video_url}}"
+                        >
+                            {{page.hero_area.button_text}}
+                        </a>
+
+                        <!-- <a
                             class="tp-caption btn-play-wrapper lightbox"
                             data-x="['left','left','center','center']"
                             data-y="middle"
@@ -269,7 +285,7 @@ testimonials:
                             href="{{page.hero_area.video_url}}"
                         >
                             <span class="btn-play btn-play-s"></span><span class="h6 pl-10 font-weight-600">{{page.hero_area.button_text}}</span>
-                        </a>
+                        </a> -->
                         <!-- /.tp-caption -->
                         {% endif %} 
                         {% if page.hero_area.big_image %}
