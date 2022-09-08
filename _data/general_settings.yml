@@ -1,13 +1,13 @@
 ---
-title: Gorilla Tech - Online Tech Support
+title: Gorilla Tech - Remote Tech Support for Professionals Freelancers & Business Owners
 email: support@getgorilla.tech
 email_2: info@getgorilla.tech
-description: Tech Support to your door
+description: Remote Tech Support for Professionals, Freelancers & Business Owners
 black_logo_1x: "/assets/images/logo.png"
 black_logo_2x: "/assets/images/logo@2x.png"
 light_logo_1x: "/assets/images/logo-light.png"
 light_logo_2x: "/assets/images/logo-light@2x.png"
-address_01: Moonshine St. <br>14/05 Light City,<br /> London, United Kingdom
+address_01: Gorilla Tech LLC <br>San Francisco<br /> California
 phone_number: "(925) 385-8667"
 copyright_text: "© 2022 Gorilla Tech. All rights reserved."
 google_analytics:
@@ -27,7 +27,7 @@ social_accounts:
   - url: "#"
     icon: jam jam-instagram
   - url: "#"
-    icon: jam jam-vimeo
+    icon: jam jam-linkedin-square
   - url: "#"
     icon: jam jam-youtube
 external_links:
