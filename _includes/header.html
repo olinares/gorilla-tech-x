@@ -59,6 +59,10 @@
         {% for menu in site.data.navigation.main_menu %}
         {% assign check_menu = menu.menu_type %}
         {% case check_menu %}
+        {% when "simple" %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{"/" | relative_url}}{{menu.url}}">{{menu.text}}</a>
+          </li>
         {% when "megamenu" %}
         <li class="nav-item">
           <a class="nav-link" href="{{menu.url}}">{{menu.text}}</a>
