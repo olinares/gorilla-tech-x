@@ -10,6 +10,7 @@ hero_area:
   big_image: "/assets/images/art/macbook2.png"
   small_image: "/assets/images/art/iphone4.png"
   video_url: https://vimeo.com/124071444
+  button_url: https://gt-x.netlify.app
   button_text: How It Works
 features_tab:
   enable: true
@@ -134,9 +135,7 @@ pricing_table:
   enable: true
   title: Our Pricing
   sub_title: 'We offer great prices, premium products <br class="d-none d-lg-block"
-    />and quality service for your business.
-
-    '
+    />and quality service for your business.'
   plans:
   - title: Basic Pricing
     monthly_price: "9"
@@ -251,10 +250,10 @@ testimonials:
                             {{page.hero_area.sub_title}}
                         </div>
                         <!-- /.tp-caption -->
-                        {% endif %} {% if page.hero_area.video_url %}
+                        {% endif %} {% if page.hero_area.button_url %}
 
                           <a
-                            class="tp-caption btn-play-wrapper btn btn-l btn-default btn-strong-hover lightbox"
+                            class="tp-caption btn btn-l btn-default btn-strong-hover lightbox"
                             data-x="['left','left','center','center']"
                             data-y="middle"
                             data-hoffset="['50','30','0','0']"
@@ -265,27 +264,10 @@ testimonials:
                             data-responsive="on"
                             data-responsive_offset="on"
                             style="z-index: 9;"
-                            href="{{page.hero_area.video_url}}"
+                            href="{{page.hero_area.button_url}}"
                         >
                             {{page.hero_area.button_text}}
                         </a>
-
-                        <!-- <a
-                            class="tp-caption btn-play-wrapper lightbox"
-                            data-x="['left','left','center','center']"
-                            data-y="middle"
-                            data-hoffset="['50','30','0','0']"
-                            data-voffset="['125','125','-130','0']"
-                            data-width="['auto','auto','auto','auto']"
-                            data-textAlign="['left','left','center','center']"
-                            data-frames='[{"delay":2500,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-responsive="on"
-                            data-responsive_offset="on"
-                            style="z-index: 9;"
-                            href="{{page.hero_area.video_url}}"
-                        >
-                            <span class="btn-play btn-play-s"></span><span class="h6 pl-10 font-weight-600">{{page.hero_area.button_text}}</span>
-                        </a> -->
                         <!-- /.tp-caption -->
                         {% endif %} 
                         {% if page.hero_area.big_image %}
