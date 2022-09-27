@@ -465,11 +465,25 @@ faq_area:
             {% endif %}
         </div>
     </div>
-    {% if page.progress_area.enable %}
-    <div class="wrapper bg-opacity-default">
-      <div>
-        {% include reviews.html %}
+
+    <!-- /.wrapper -->
+  <div class="wrapper bg-opacity-default">
+    <div class="container inner">
+      <h2 class="section-title mb-40 text-center">Our customers love us</h2>
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div>
+            {% include reviews.html %}
+          </div>
+        </div>
+        <!-- /column -->
       </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+    <!-- {% if page.progress_area.enable %}
+    <div class="wrapper bg-opacity-default">
         <div class="container inner">
             <div class="row">
                 <div class="col-md-10 offset-md-1">
@@ -494,7 +508,7 @@ faq_area:
         <!-- /.container -->
     </div>
     <!-- /.wrapper -->
-    {% endif %}
+    {% endif %} -->
     <div class="wrapper light-wrapper">
         <div class="container inner">
             {% assign pricing_data = page.pricing_table %}
