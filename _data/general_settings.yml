@@ -93,4 +93,5 @@ author_page_header:
   header_background_image: "/assets/images/art/bg31.jpg"
 gallery:
   images:
+  - img: "/assets/images/art/iphone4.png"
   - img: "/assets/images/art/macbook2.png"
