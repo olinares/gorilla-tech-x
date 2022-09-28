@@ -1,5 +1,6 @@
 ---
-title: Gorilla Tech - Remote Tech Support for Professionals Freelancers & Business Owners
+title: Gorilla Tech - Remote Tech Support for Professionals Freelancers & Business
+  Owners
 email: support@getgorilla.tech
 email_2: info@getgorilla.tech
 description: Remote Tech Support for Professionals, Freelancers & Business Owners
@@ -20,7 +21,7 @@ google_map: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d
 social_accounts:
   title: Follow Us
   links:
-  - url: "#"
+  - url: https://mobile.twitter.com/gorillatechs
     icon: jam jam-twitter
   - url: "#"
     icon: jam jam-facebook
