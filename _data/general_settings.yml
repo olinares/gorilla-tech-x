@@ -93,11 +93,4 @@ author_page_header:
   header_background_image: "/assets/images/art/bg31.jpg"
 gallery:
   images:
-  - img: "/assets/images/art/z1.svg"
-  - img: "/assets/images/art/z2.svg"
-  - img: "/assets/images/art/z3.svg"
-  - img: "/assets/images/art/z4.svg"
-  - img: "/assets/images/art/z5.svg"
-  - img: "/assets/images/art/z6.svg"
-  - img: "/assets/images/art/z7.svg"
-  - img: "/assets/images/art/z8.svg"
+  - img: "/assets/images/art/macbook2.png"
