@@ -10,7 +10,7 @@ light_logo_1x: "/assets/images/logo-light.png"
 light_logo_2x: "/assets/images/logo-light@2x.png"
 address_01: Gorilla Tech LLC <br>San Francisco<br /> California
 phone_number: "(925) 385-8667"
-copyright_text: "© 2022 Gorilla Tech. All rights reserved."
+copyright_text: "© 2023 Gorilla Tech. All rights reserved."
 google_analytics:
   enable: false
   key: UA-664136761-1

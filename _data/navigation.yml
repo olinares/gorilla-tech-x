@@ -36,7 +36,7 @@ main_menu:
   - text: Page Scrolling
     url: "/scroll"
 - text: Pricing
-  url: "/"
+  url: "/elements/pricing"
   menu_type: megamenu
   submenu:
   - text: Accordion
