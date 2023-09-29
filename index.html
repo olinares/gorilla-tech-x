@@ -379,7 +379,8 @@ faq_area:
     <!-- /.wrapper -->
     <div class="wrapper light-wrapper">
         <div class="container inner">
-            {% include clients_carousel.html %}
+          {% include senja.html %}
+            <!-- {% include clients_carousel.html %} -->
              {% if page.features_tab.enable %}
             <div class="features-area" id="benefits">
                 <div class="space140"></div>
@@ -502,19 +503,18 @@ faq_area:
     </div>
 
     <!-- /.wrapper -->
-  <div class="wrapper bg-opacity-default">
+ <!--  <div class="wrapper bg-opacity-default">
     <div class="container inner" id="reviews">
       <h2 class="section-title mb-40 text-center">Our customers love us</h2>
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
-          {% include reviews.html %}
-        </div>
+        </div> -->
         <!-- /column -->
-      </div>
+      <!-- </div> -->
       <!-- /.row -->
-    </div>
+    <!-- </div> -->
     <!-- /.container -->
-  </div>
+  <!-- </div> -->
     <!-- {% if page.progress_area.enable %}
     <div class="wrapper bg-opacity-default">
         <div class="container inner">
@@ -542,7 +542,7 @@ faq_area:
     <!-- </div> -->
     <!-- /.wrapper -->
     <!-- {% endif %} -->
-    <div class="wrapper light-wrapper">
+    <div class="wrapper bg-opacity-default">
         <div class="container inner">
             {% assign pricing_data = page.pricing_table %}
              {% if pricing_data.enable %}
@@ -556,8 +556,11 @@ faq_area:
                  {% include pricing.html %}
             </div>
             <!-- /.container -->
-            {% endif %} 
-
+            {% endif %}
+            <div class="fullwidth-container" id="reviews"> 
+              <h2 class="section-title mb-40 text-center">Our customers love us</h2>
+             {% include reviews.html %}
+            </div>
              {% if page.faq_area.enable %}
     <div class="space160" id="faqs"></div>
     <h2 class="title-color color-gray text-center">{{page.faq_area.title}}</h2>
@@ -615,7 +618,7 @@ faq_area:
     </div>
     <!--/.row -->
     {% endif %}
-
+             
             {% if page.testimonials.enable %}
             <div class="testimonials-area">
                 <div class="space140"></div>
