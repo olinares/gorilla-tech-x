@@ -392,7 +392,7 @@ faq_area:
         <div class="container inner">
             {% include clients_carousel.html %}
              {% if page.features_tab.enable %}
-            <div class="features-area">
+            <div class="features-area" id="benefits">
                 <div class="space140"></div>
                 <div class="row">
                     <div class="col-md-7 mx-auto">
@@ -514,7 +514,7 @@ faq_area:
 
     <!-- /.wrapper -->
   <div class="wrapper bg-opacity-default">
-    <div class="container inner">
+    <div class="container inner" id="reviews">
       <h2 class="section-title mb-40 text-center">Our customers love us</h2>
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
@@ -553,11 +553,11 @@ faq_area:
     <!-- </div> -->
     <!-- /.wrapper -->
     <!-- {% endif %} -->
-    <div class="wrapper light-wrapper" id="prices">
+    <div class="wrapper light-wrapper">
         <div class="container inner">
             {% assign pricing_data = page.pricing_table %}
              {% if pricing_data.enable %}
-            <div class="container inner">
+            <div class="container inner" id="prices">
                 <h2 class="title-color color-gray text-center">{{pricing_data.title}}</h2>
                 <h3 class="display-3 text-center">{{pricing_data.sub_title}}</h3>
                 <div class="space40"></div>
@@ -609,7 +609,7 @@ faq_area:
             {% endif %} 
 
              {% if page.faq_area.enable %}
-    <div class="space160"></div>
+    <div class="space160" id="faqs"></div>
     <h2 class="title-color color-gray text-center">{{page.faq_area.title}}</h2>
     <h3 class="display-3 text-center">
       {{page.faq_area.sub_title}}

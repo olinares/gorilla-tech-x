@@ -3,10 +3,10 @@ main_menu:
 - text: Home
   url: ''
   menu_type: simple
-- text: Services
-  url: "/"
-  menu_type: dropdown
-  has_submenu: 'true'
+- text: Benefits
+  url: "#benefits"
+  menu_type: simple
+  has_submenu: 'false'
   label_two:
   - sub_menu_text: Our Services
     sub_menu:
@@ -37,7 +37,7 @@ main_menu:
     url: "/scroll"
 - text: Pricing
   url: "#prices"
-  menu_type: megamenu
+  menu_type: simple
   submenu:
   - text: Accordion
     url: "/elements/accordion"
@@ -119,8 +119,9 @@ main_menu:
     url: "/elements/waves"
   - text: Wrappers
     url: "/elements/wrappers"
-- text: Membership
-  url: "/portfolios/"
+- text: Client Reviews
+  url: "#reviews"
+  menu_type: simple
   submenu:
   - text: Portfolio 01
     url: "/portfolios/index"
@@ -138,8 +139,9 @@ main_menu:
     url: "/portfolios/index-7"
   - text: Portfolio 08
     url: "/portfolios/index-8"
-- text: Blog
-  url: "/"
+- text: FAQs
+  url: "#faqs"
+  menu_type: simple
   submenu:
   - text: Blog 01
     url: "/blogs/index"
