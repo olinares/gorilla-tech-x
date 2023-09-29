@@ -144,10 +144,10 @@ pricing_table:
   sub_title: We offer Vetted Techs, 100% US Based Services <br class="d-none d-lg-block"
     />and friendly service for your business.
   plans:
-  - title: On Demand IT Team
-    monthly_price: "199"
-    yearly_price: "1908"
-    pricing_url: "#"
+  - title: Remote Tech Support
+    monthly_price: "119"
+    yearly_price: "699"
+    pricing_url: "https://cal.com/gorillatech/remote-support"
     icon: "/assets/images/icons/ec-mobile.png"
     features:
     - "<strong>1</strong> Project"
@@ -156,10 +156,10 @@ pricing_table:
     - Custom <strong>Cloud</strong> Services
     - Weekly <strong>Reports</strong>
     - 7/24 <strong>Support</strong>
-  - title: Premium Plan
-    monthly_price: "19"
-    yearly_price: "199"
-    pricing_url: "#"
+  - title: Onsite Tech Support
+    monthly_price: "229"
+    yearly_price: "3499"
+    pricing_url: "https://cal.com/gorillatech/onsite-support"
     icon: "/assets/images/icons/ec-store.png"
     features:
     - "<strong>5</strong> Project"
@@ -168,18 +168,7 @@ pricing_table:
     - Custom <strong>Cloud</strong> Services
     - Weekly <strong>Reports</strong>
     - 7/24 <strong>Support</strong>
-  - title: Corporate Plan
-    monthly_price: "49"
-    yearly_price: "499"
-    pricing_url: "#"
-    icon: "/assets/images/icons/ec-online-shop.png"
-    features:
-    - "<strong>49</strong> Project"
-    - "<strong>300K</strong> API Access"
-    - "<strong>500MB</strong> Storage"
-    - Custom <strong>Cloud</strong> Services
-    - Weekly <strong>Reports</strong>
-    - 7/24 <strong>Support</strong>
+
 testimonials:
   enable: true
   image: "/assets/images/art/about15.jpg"
@@ -562,48 +551,9 @@ faq_area:
                 <h3 class="display-3 text-center">{{pricing_data.sub_title}}</h3>
                 <div class="space40"></div>
                 <div class="pricing-wrapper">
-                    <div class="pricing-switcher-wrapper switcher">
-                        <div class="pricing-switchers">
-                            <div class="pricing-switcher pricing-switcher-active">Monthly</div>
-                            <div class="pricing-switcher">Yearly</div>
-                            <div class="switcher-button bg-default"></div>
-                        </div>
-                    </div>
-                    <div class="space60"></div>
-                    <div class="row no-gutters">
-                        {% for pricing in pricing_data.plans %}
-                        <div class="col-md-4">
-                            <div class="pricing panel box bg-white shadow">
-                                <div class="panel-heading">
-                                    <div class="icon icon-svg mb-10"><img src="{{pricing.icon}}" alt="{{pricing.title}}" /></div>
-                                    <h4 class="panel-title mb-35">{{pricing.title}}</h4>
-                                    <div class="prices color-dark">
-                                        <div class="price price-show"><span class="price-currency">$</span><span class="price-value">{{pricing.monthly_price}}</span> <span class="price-duration">month</span></div>
-                                        <div class="price price-hide price-hidden"><span class="price-currency">$</span><span class="price-value">{{pricing.yearly_price}}</span> <span class="price-duration">year</span></div>
-                                    </div>
-                                </div>
-                                <!--/.panel-heading -->
-                                <div class="panel-body">
-                                    <table class="table">
-                                        {% for features in pricing.features %}
-                                        <tr>
-                                            <td>{{features}}</td>
-                                        </tr>
-                                        {% endfor %}
-                                    </table>
-                                </div>
-                                <!--/.panel-body -->
-                                <div class="panel-footer">
-                                    <a href="{{pricing.pricing_url}}" class="btn" role="button">Choose Plan</a>
-                                </div>
-                            </div>
-                            <!--/.pricing -->
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <!--/.row -->
                 </div>
                 <!--/.pricing-wrapper -->
+                 {% include pricing.html %}
             </div>
             <!-- /.container -->
             {% endif %} 
