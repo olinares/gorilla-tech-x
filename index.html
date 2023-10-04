@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gorilla Tech Home
+title: Gorilla Tech - On Demand Tech Support as a Subscription 
 custom_css: cobalt
 custom_font: font2
 hero_area:
@@ -11,7 +11,7 @@ hero_area:
   small_image: "/assets/images/art/iphone4.png"
   video_url: https://vimeo.com/124071444
   button_url: https://cal.com/gorillatech/remote-support
-  button_text: How It Works
+  button_text: Get Started
 features_tab:
   enable: true
   title: The Gorilla Way - Features Objections
@@ -226,6 +226,13 @@ faq_area:
   - question: Can I cancel or pause my subscription?
     answer: You can pause or cancel your monthly support subscription at any time. If you signed up for a month of service and decide to cancel or pause halfway through your month, your subscription can be paused or canceled. You will still be able to request services for the remainder of your 30 day billing cycle.
 
+contact_area:
+  enable: true
+  sub_title: "Get the support you deserve and unlock your potential to get back to making $$$ today"
+  bg_image: "/assets/images/art/map.png"
+  button_text: "Get Started"
+  button_url: "#prices"   
+
 ---
 <div class="content-wrapper">
     {% include header.html extra_class="absolute transparent" logo_class="logo" container_class="container" %}
@@ -343,9 +350,26 @@ faq_area:
         <!-- /.rev_slider_wrapper -->
     </div>
     <!-- /.wrapper -->
+
+    <!-- <div class="wrapper bg-opacity-default"> -->
+      <!-- <div class="container inner"> -->
+          {% assign pricing_data = page.pricing_table %}
+           {% if pricing_data.enable %}
+          <div class="container inner" id="prices">
+              <h2 class="title-color color-gray text-center">{{pricing_data.title}}</h2>
+              <h3 class="display-3 text-center">{{pricing_data.sub_title}}</h3>
+              <div class="space40"></div>
+              <div class="pricing-wrapper">
+              </div>
+              <!--/.pricing-wrapper -->
+               {% include reviews.html %}
+          </div>
+          </div>
+          <!-- /.container -->
+          {% endif %}
+
     <div class="wrapper light-wrapper">
         <div class="container inner">
-          {% include senja.html %}
             <!-- {% include clients_carousel.html %} -->
              {% if page.features_tab.enable %}
             <div class="features-area" id="benefits">
@@ -523,10 +547,7 @@ faq_area:
             </div>
             <!-- /.container -->
             {% endif %}
-            <div class="fullwidth-container" id="reviews"> 
-              <h2 class="section-title mb-40 text-center">Our customers love us</h2>
-             {% include reviews.html %}
-            </div>
+            
              {% if page.faq_area.enable %}
     <div class="space160" id="faqs"></div>
     <h2 class="title-color color-gray text-center">{{page.faq_area.title}}</h2>
@@ -585,35 +606,22 @@ faq_area:
     <!--/.row -->
     {% endif %}
              
-            {% if page.testimonials.enable %}
-            <div class="testimonials-area">
-                <div class="space140"></div>
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="basic-slider owl-carousel gap-small text-center" data-margin="30">
-                            {% for feedback in page.testimonials.feedback %}
-                            <div class="item">
-                                <blockquote class="icon larger">
-                                    <p>"{{feedback.quote}}"</p>
-                                    <div class="blockquote-details justify-content-center">
-                                        <div class="img-blob blob1">
-                                            <img src="{{feedback.image}}" alt="{{feedback.name}}" />
-                                        </div>
-                                        <div class="info">
-                                            <h6 class="mb-0">{{feedback.name}}</h6>
-                                            <span class="meta mb-0">{{feedback.designation}}</span>
-                                        </div>
-                                    </div>
-                                </blockquote>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <!-- /.owl-carousel -->
-                    </div>
-                    <!-- /column -->
+    {% if page.contact_area.enable %}
+    <div class="wrapper image-wrapper bg-auto no-overlay bg-image text-center" data-image-src="{{page.contact_area.bg_image}}">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-md-9 mx-auto">
+                  {% if page.contact_area.sub_title %}
+                     <h3 class="display-3">{{page.contact_area.sub_title}}</h3>
+                    {% endif %}
+                    <div class="space30"></div>
+                    {% if page.contact_area.button_text %}
+                    <a href="{{page.contact_area.button_url}}" class="btn btn-l btn-default mb-0">{{page.contact_area.button_text}}</a>
+                    {% endif %}
                 </div>
-                <!-- /.row -->
             </div>
+        </div>
+    </div>
             {% endif %}
         </div>
     </div>
