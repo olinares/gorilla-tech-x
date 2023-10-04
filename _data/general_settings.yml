@@ -8,7 +8,7 @@ black_logo_1x: "/assets/images/logo.png"
 black_logo_2x: "/assets/images/logo@2x.png"
 light_logo_1x: "/assets/images/logo-light.png"
 light_logo_2x: "/assets/images/logo-light@2x.png"
-address_01: Gorilla Tech LLC <br>San Francisco<br /> California
+address_01: Gorilla Tech LLC <br>San Francisco<br /> support@getgorilla.tech
 phone_number: "(925) 385-8667"
 copyright_text: "© 2023 Gorilla Tech. All rights reserved."
 google_analytics:
@@ -32,18 +32,18 @@ social_accounts:
   - url: "#"
     icon: jam jam-youtube
 external_links:
-  title: Learn More
+  title: Quick Links
   links:
   - url: "#"
-    text: About Us
+    text: Client Login
   - url: "#"
-    text: Our Story
+    text: Book a Service
   - url: "#"
-    text: Projects
+    text: Monthly Plans
+  - url: "#"
+    text: FAQs
   - url: "#"
     text: Pricing
-  - url: "#"
-    text: Features
 external_links_02:
   title: Need Help?
   links:
