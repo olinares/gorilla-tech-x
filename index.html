@@ -9,9 +9,9 @@ hero_area:
   sub_title: Stay focused on your work, we handle the Tech.
   big_image: "/assets/images/art/macbook2.png"
   small_image: "/assets/images/art/iphone4.png"
-  video_url: https://vimeo.com/124071444
-  button_url: https://cal.com/gorillatech/remote-support
-  button_text: Get Started
+  video_url: 
+  button_url: gorillatech/remote-support
+  button_text: Get Remote Support
 features_tab:
   enable: true
   title: The Gorilla Way - Features Objections
@@ -234,6 +234,7 @@ contact_area:
   button_url: "#prices"   
 
 ---
+{% include remote-support.html %}
 <div class="content-wrapper">
     {% include header.html extra_class="absolute transparent" logo_class="logo" container_class="container" %}
     <div class="wrapper bg-opacity-default">
@@ -286,7 +287,9 @@ contact_area:
                         {% endif %} {% if page.hero_area.button_url %}
 
                           <a
-                            class="tp-caption btn btn-l btn-default btn-strong-hover lightbox"
+                            data-cal-link="gorillatech/remote-support"
+                            data-cal-config='{"layout":"column-view"}'
+                            class="tp-caption btn btn-l btn-default btn-strong-hover"
                             data-x="['left','left','center','center']"
                             data-y="middle"
                             data-hoffset="['50','30','0','0']"
@@ -297,7 +300,7 @@ contact_area:
                             data-responsive="on"
                             data-responsive_offset="on"
                             style="z-index: 9;"
-                            href="{{page.hero_area.button_url}}"
+                            
                         >
                             {{page.hero_area.button_text}}
                         </a>
@@ -544,6 +547,7 @@ contact_area:
                 </div>
                 <!--/.pricing-wrapper -->
                  {% include pricing.html %}
+
             </div>
             <!-- /.container -->
             {% endif %}
