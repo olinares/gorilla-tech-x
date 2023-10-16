@@ -94,6 +94,9 @@ $(document).ready(function() {
 		$navbar_offcanvas.removeClass('open');
 		$header_hamburger.removeClass('active');
 	});
+	$('.navbar-nav a').on('click', function() {
+		$('.navbar-collapse').removeClass('show');
+	});
 	/*-----------------------------------------------------------------------------------*/
 	/*	ONEPAGE NAV LINKS
 	/*-----------------------------------------------------------------------------------*/
