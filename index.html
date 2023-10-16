@@ -19,7 +19,7 @@ features_tab:
     of your tech team there when you need us
   lists:
   - title: We are 100% US Based
-    icon: "/assets/images/icons/of-diagram.png"
+    icon: "/assets/images/icons/hs-support-5.png"
     content:
       title: Our techs are 100% U.S. based
       image: "/assets/images/art/tech-team.png"
@@ -32,11 +32,11 @@ features_tab:
       - Highly vetted
       - Friendly
       - Speak your language
-  - title: Simple Flat Rate Incident Fee
+  - title: I need on demand tech support
     icon: "/assets/images/icons/st-payment-method.png"
     content:
       title: Clear & Simple Pricing
-      image: "/assets/images/art/ui2.png"
+      image: "/assets/images/concept/concept5.png"
       description: 'No need to worry about the clock. Our techs are highly vetted
         and trained and will resolve your issue in no time. Letting you get back to
         what matters to you! Your family, business and life.
@@ -50,11 +50,11 @@ features_tab:
       - One low flat rate price - $99 per incident
       - We support Apple, Windows, Mobile, Home Tech, Software issues
       - Remote support software will be used to connect with our techs
-  - title: On Demand Tech Support Monthly Subscription
-    icon: "/assets/images/icons/ms-cloud-computing.png"
+  - title: I need ongoing tech support
+    icon: "/assets/images/icons/hs-help.png"
     content:
       title: Monthly Support Plans Available
-      image: "/assets/images/art/ui3.png"
+      image: "/assets/images/concept/concept14.png"
       description: 'Calling all Work From Home, Remote, and Hybrid Professionals.
         The Freelancers, Business Owners Startups and Entrepreuneurs. The Influencers,
         The Creators and the Hustlers! We know you are constantly building, creating
@@ -62,8 +62,8 @@ features_tab:
         team at your service when you need it most.
 
         '
-      button_text: Sign Up $199
-      button_url: https://buy.stripe.com/7sIg0Bb0F1xhepa5kk
+      button_text: See Plans
+      button_url: "#plans"
       lists:
       - Choose this option if you need an on-demand, remote tech with unlimited online
         support - $199 Monthly
@@ -73,7 +73,7 @@ features_tab:
       - You can purchase one of our month to month or yearly plans to save even more
         - $600 yearly savings
   - title: Fix Your Tech and Get On With Your Life
-    icon: "/assets/images/icons/sm-setting.png"
+    icon: "/assets/images/icons/ms-shield.png"
     content:
       title: System Integration
       image: "/assets/images/art/ui4.png"
@@ -91,7 +91,7 @@ two_columns_one:
   enable: true
   title: How It Works
   sub_title: How does our process work and how are we different then the other guys
-  image: "/assets/images/art/ui5.png"
+  image: "/assets/images/art/cal-overlay.png"
   lists:
   - title: Schedule Your Service
     sub_title: Use our real-time, convenient online scheduler to book your service
@@ -354,8 +354,149 @@ contact_area:
     </div>
     <!-- /.wrapper -->
 
-    <!-- <div class="wrapper bg-opacity-default"> -->
-      <!-- <div class="container inner"> -->
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+          <!-- {% include clients_carousel.html %} -->
+           {% if page.features_tab.enable %}
+          <div class="features-area" id="benefits">
+              
+              <div class="row">
+                  <div class="col-md-7 mx-auto">
+                      <div class="text-center">
+                          {% if page.features_tab.title %}
+                          <h2 class="title-color color-gray">{{page.features_tab.title}}</h2>
+                          {% endif %} {% if page.features_tab.sub_title %}
+                          <h3 class="display-3">{{page.features_tab.sub_title}}</h3>
+                          {% endif %}
+                      </div>
+                  </div>
+              </div>
+              <!-- /.text-center -->
+              <div class="space40"></div>
+              <ul class="nav nav-tabs nav-tabs-centered nav-tabs-bg d-flex justify-content-between nav-justified text-center">
+                  {% for list in page.features_tab.lists %}
+                  <li class="nav-item">
+                      <a class="nav-link {% if forloop.index == 1 %} active {% endif %}" data-toggle="tab" href="#tab4-{{forloop.index}}">
+                          {% if list.icon %}
+                          <div class="icon icon-svg mb-10">
+                              <img src="{{list.icon}}" alt="{{list.title}}" />
+                          </div>
+                          {% endif %}
+                          <span>{{list.title}}</span>
+                      </a>
+                  </li>
+                  {% endfor %}
+              </ul>
+              <!-- /.nav-tabs -->
+              <div class="space60 d-none d-md-block"></div>
+              <div class="tab-content">
+                  {% for list in page.features_tab.lists %}
+                  <div class="tab-pane {% if forloop.index == 1 %} show active {% endif %}" id="tab4-{{forloop.index}}">
+                      <div class="row align-items-center">
+                          {% if list.content.image %}
+                          <div class="col-lg-7">
+                              <div class="pr-15 pr-md-0 pr-sm-0 h-100">
+                                  <figure>
+                                      <img src="{{list.content.image}}" alt="{{list.content.title}}" />
+                                  </figure>
+                              </div>
+                          </div>
+                          {% endif %}
+                          <div class="space30 d-none d-md-block d-lg-none"></div>
+                          <div class="col-lg-5">
+                              <div class="pl-15 pl-md-0 pl-sm-0 h-100">
+                                  {% if list.content.title %}
+                                  <h3>{{list.content.title}}</h3>
+                                  {% endif %} 
+                                  {% if list.content.description %}
+                                  <p>{{list.content.description}}</p>
+                                  {% endif %} 
+                                  {% if list.content.lists %}
+                                  <ul class="icon-list bullet-default">
+                                      {% for sm_list in list.content.lists %}
+                                      <li><i class="jam jam-arrow-right"></i>{{sm_list}}</li>
+                                      {% endfor %}
+                                  </ul>
+                                  {% endif %} 
+                                  {% if list.content.button_text %}
+                                  <div class="space10"></div>
+                                  <a href="{{list.content.button_url}}" class="btn btn-default">{{list.content.button_text}}</a>
+                                  {% endif %}
+                              </div>
+                          </div>
+                          <!--/column -->
+                      </div>
+                      <!--/.row -->
+                  </div>
+                  {% endfor %}
+              </div>
+              <!-- /.tab-content -->
+          </div>
+          {% endif %} 
+          {% if page.two_columns_one.enable %}
+          <div class="two-columns-one">
+              <div class="space160"></div>
+              <div class="row">
+                  <div class="col-md-7 mx-auto">
+                      {% if page.two_columns_one.title %}
+                      <h2 class="title-color color-gray text-center">{{page.two_columns_one.title}}</h2>
+                      {% endif %} {% if page.two_columns_one.sub_title %}
+                      <h3 class="display-3 text-center">{{page.two_columns_one.sub_title}}</h3>
+                      {% endif %}
+                  </div>
+              </div>
+              <div class="space40"></div>
+              <div class="row align-items-xl-center">
+                  {% if page.two_columns_one.image %}
+                  <div class="col-lg-7">
+                      <figure class="shadow">
+                          <img src="{{page.two_columns_one.image}}" alt="{{page.two_columns_one.title}}" />
+                      </figure>
+                  </div>
+                  {% endif %}
+                  <div class="space20 d-md-none"></div>
+                  <div class="space50 d-none d-md-block d-lg-none"></div>
+                  <div class="col-lg-5 pl-50 pl-md-15">
+                      {% for list in page.two_columns_one.lists %}
+                      <div class="d-flex flex-row">
+                          <div>
+                              <span class="icon icon-bg icon-bg-default color-default mr-25"><span class="number">{{forloop.index}}</span></span>
+                          </div>
+                          <div>
+                              <h5>{{list.title}}</h5>
+                              <p class="mb-0">{{list.sub_title}}</p>
+                          </div>
+                      </div>
+                      <div class="space40"></div>
+                      {% endfor %}
+                  </div>
+                  <!--/column -->
+              </div>
+              <!--/.row -->
+          </div>
+          {% endif %}
+      </div>
+  </div>
+
+
+  <div class="wrapper bg-opacity-default">
+        <div class="container inner" id="plans">
+          {% assign pricing_data = page.pricing_table %}
+         {% if pricing_data.enable %}
+            <h2 class="title-color color-gray text-center">{{pricing_data.title}}</h2>
+            <h3 class="display-3 text-center">{{pricing_data.sub_title}}</h3>
+            <div class="space40"></div>
+            <div class="pricing-wrapper">
+            </div>
+            <!--/.pricing-wrapper -->
+             {% include pricing.html %}
+
+        </div>
+        <!-- /.container -->
+        {% endif %}
+
+    <!-- <div class="wrapper bg-opacity-default">
+       <div class="container inner"> -->
           {% assign pricing_data = page.pricing_table %}
            {% if pricing_data.enable %}
           <div class="container inner" id="reviews">
@@ -370,131 +511,6 @@ contact_area:
           </div>
           <!-- /.container -->
           {% endif %}
-
-    <div class="wrapper light-wrapper">
-        <div class="container inner">
-            <!-- {% include clients_carousel.html %} -->
-             {% if page.features_tab.enable %}
-            <div class="features-area" id="benefits">
-                <div class="space140"></div>
-                <div class="row">
-                    <div class="col-md-7 mx-auto">
-                        <div class="text-center">
-                            {% if page.features_tab.title %}
-                            <h2 class="title-color color-gray">{{page.features_tab.title}}</h2>
-                            {% endif %} {% if page.features_tab.sub_title %}
-                            <h3 class="display-3">{{page.features_tab.sub_title}}</h3>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
-                <!-- /.text-center -->
-                <div class="space40"></div>
-                <ul class="nav nav-tabs nav-tabs-centered nav-tabs-bg d-flex justify-content-between nav-justified text-center">
-                    {% for list in page.features_tab.lists %}
-                    <li class="nav-item">
-                        <a class="nav-link {% if forloop.index == 1 %} active {% endif %}" data-toggle="tab" href="#tab4-{{forloop.index}}">
-                            {% if list.icon %}
-                            <div class="icon icon-svg mb-10">
-                                <img src="{{list.icon}}" alt="{{list.title}}" />
-                            </div>
-                            {% endif %}
-                            <span>{{list.title}}</span>
-                        </a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                <!-- /.nav-tabs -->
-                <div class="space60 d-none d-md-block"></div>
-                <div class="tab-content">
-                    {% for list in page.features_tab.lists %}
-                    <div class="tab-pane {% if forloop.index == 1 %} show active {% endif %}" id="tab4-{{forloop.index}}">
-                        <div class="row align-items-center">
-                            {% if list.content.image %}
-                            <div class="col-lg-7">
-                                <div class="pr-15 pr-md-0 pr-sm-0 h-100">
-                                    <figure>
-                                        <img src="{{list.content.image}}" alt="{{list.content.title}}" />
-                                    </figure>
-                                </div>
-                            </div>
-                            {% endif %}
-                            <div class="space30 d-none d-md-block d-lg-none"></div>
-                            <div class="col-lg-5">
-                                <div class="pl-15 pl-md-0 pl-sm-0 h-100">
-                                    {% if list.content.title %}
-                                    <h3>{{list.content.title}}</h3>
-                                    {% endif %} 
-                                    {% if list.content.description %}
-                                    <p>{{list.content.description}}</p>
-                                    {% endif %} 
-                                    {% if list.content.lists %}
-                                    <ul class="icon-list bullet-default">
-                                        {% for sm_list in list.content.lists %}
-                                        <li><i class="jam jam-arrow-right"></i>{{sm_list}}</li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %} 
-                                    {% if list.content.button_text %}
-                                    <div class="space10"></div>
-                                    <a href="{{list.content.button_url}}" class="btn btn-default">{{list.content.button_text}}</a>
-                                    {% endif %}
-                                </div>
-                            </div>
-                            <!--/column -->
-                        </div>
-                        <!--/.row -->
-                    </div>
-                    {% endfor %}
-                </div>
-                <!-- /.tab-content -->
-            </div>
-            {% endif %} 
-            {% if page.two_columns_one.enable %}
-            <div class="two-columns-one">
-                <div class="space160"></div>
-                <div class="row">
-                    <div class="col-md-7 mx-auto">
-                        {% if page.two_columns_one.title %}
-                        <h2 class="title-color color-gray text-center">{{page.two_columns_one.title}}</h2>
-                        {% endif %} {% if page.two_columns_one.sub_title %}
-                        <h3 class="display-3 text-center">{{page.two_columns_one.sub_title}}</h3>
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="space40"></div>
-                <div class="row align-items-xl-center">
-                    {% if page.two_columns_one.image %}
-                    <div class="col-lg-7">
-                        <figure class="shadow">
-                            <img src="{{page.two_columns_one.image}}" alt="{{page.two_columns_one.title}}" />
-                        </figure>
-                    </div>
-                    {% endif %}
-                    <div class="space20 d-md-none"></div>
-                    <div class="space50 d-none d-md-block d-lg-none"></div>
-                    <div class="col-lg-5 pl-50 pl-md-15">
-                        {% for list in page.two_columns_one.lists %}
-                        <div class="d-flex flex-row">
-                            <div>
-                                <span class="icon icon-bg icon-bg-default color-default mr-25"><span class="number">{{forloop.index}}</span></span>
-                            </div>
-                            <div>
-                                <h5>{{list.title}}</h5>
-                                <p class="mb-0">{{list.sub_title}}</p>
-                            </div>
-                        </div>
-                        <div class="space40"></div>
-                        {% endfor %}
-                    </div>
-                    <!--/column -->
-                </div>
-                <!--/.row -->
-            </div>
-            {% endif %}
-        </div>
-    </div>
-
     <!-- /.wrapper -->
  <!--  <div class="wrapper bg-opacity-default">
     <div class="container inner" id="reviews">
@@ -535,25 +551,9 @@ contact_area:
     <!-- </div> -->
     <!-- /.wrapper -->
     <!-- {% endif %} -->
-    <div class="wrapper bg-opacity-default">
-        <div class="container inner">
-            {% assign pricing_data = page.pricing_table %}
-             {% if pricing_data.enable %}
-            <div class="container inner" id="plans">
-                <h2 class="title-color color-gray text-center">{{pricing_data.title}}</h2>
-                <h3 class="display-3 text-center">{{pricing_data.sub_title}}</h3>
-                <div class="space40"></div>
-                <div class="pricing-wrapper">
-                </div>
-                <!--/.pricing-wrapper -->
-                 {% include pricing.html %}
-
-            </div>
-            <!-- /.container -->
-            {% endif %}
-            
+  <div class="container inner pb-0">            
              {% if page.faq_area.enable %}
-    <div class="space160" id="faqs"></div>
+    <div class="space40" id="faqs"></div>
     <h2 class="title-color color-gray text-center">{{page.faq_area.title}}</h2>
     <h3 class="display-3 text-center">
       {{page.faq_area.sub_title}}

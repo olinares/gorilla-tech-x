@@ -34,15 +34,15 @@ social_accounts:
 external_links:
   title: Quick Links
   links:
-  - url: "#"
+  - url: "https://billing.stripe.com/p/login/cN202N7467QH9jibII"
     text: Client Login
-  - url: "#"
+  - url: "https://cal.com/gorillatech"
     text: Book a Service
-  - url: "#"
+  - url: "#plans"
     text: Monthly Plans
-  - url: "#"
+  - url: "#faqs"
     text: FAQs
-  - url: "#"
+  - url: "#plans"
     text: Pricing
 external_links_02:
   title: Need Help?
