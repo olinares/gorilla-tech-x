@@ -35,7 +35,7 @@ main_menu:
     url: "/loading"
   - text: Page Scrolling
     url: "/scroll"
-- text: Pricing
+- text: Support Plans
   url: "#plans"
   menu_type: simple
   submenu:
