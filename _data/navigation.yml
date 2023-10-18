@@ -1,8 +1,8 @@
 ---
 main_menu:
 - text: Home
-  url: ''
-  menu_type: one_page_nav_settings
+  url: "/"
+  menu_type: simple
 - text: Benefits
   url: "#benefits"
   menu_type: simple

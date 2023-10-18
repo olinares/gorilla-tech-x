@@ -1,14 +1,12 @@
 ---
-title: Gorilla Tech - Remote Tech Support for Professionals Freelancers & Business
-  Owners
+title: Gorilla Tech - Tech support for business, freelancers, startups and creatives. Monthly plans and on demand techs available.
 email: support@getgorilla.tech
-email_2: info@getgorilla.tech
-description: Remote Tech Support for Professionals, Freelancers & Business Owners
+description: Tech support for business, freelancers, startups and creatives.
 black_logo_1x: "/assets/images/logo.png"
 black_logo_2x: "/assets/images/logo@2x.png"
 light_logo_1x: "/assets/images/logo-light.png"
 light_logo_2x: "/assets/images/logo-light@2x.png"
-address_01: Gorilla Tech LLC <br>San Francisco<br /> support@getgorilla.tech
+address_01: Gorilla Tech LLC <br>San Francisco Bay Area<br />
 phone_number: "(925) 385-8667"
 copyright_text: "© 2023 Gorilla Tech. All rights reserved."
 google_analytics:
@@ -23,18 +21,14 @@ social_accounts:
   links:
   - url: https://mobile.twitter.com/gorillatechs
     icon: jam jam-twitter
-  - url: "#"
-    icon: jam jam-facebook
-  - url: https://www.instagram.com/gorillatechs/
+  - url: 
     icon: jam jam-instagram
   - url: https://linkedin.com/company/getgorillatech
     icon: jam jam-linkedin-square
-  - url: "#"
-    icon: jam jam-youtube
 external_links:
   title: Quick Links
   links:
-  - url: "https://billing.stripe.com/p/login/cN202N7467QH9jibII"
+  - url: https://billing.stripe.com/p/login/cN202N7467QH9jibII
     text: Client Login
   - url: "https://cal.com/gorillatech"
     text: Book a Service
@@ -42,8 +36,6 @@ external_links:
     text: Monthly Plans
   - url: "#faqs"
     text: FAQs
-  - url: "#plans"
-    text: Pricing
 external_links_02:
   title: Need Help?
   links:
